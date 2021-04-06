@@ -1,0 +1,16 @@
+{
+  "name": "plante-iot-clients",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Renato Alves de Oliveira",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^4.2.6",
+    "nodemon": "^2.0.7"
+  }
+}
