@@ -9,9 +9,9 @@ texto = (tam) => {
     return t
 }
 
-//tam 64, 1024, 4096
+//tam 512, 2048
 
-const tam = 4096 //Bytes
+const tam = 2048 //Bytes
 const tempo_loop = 60 //S
 
 msg.a = texto(tam - 39)
@@ -20,6 +20,9 @@ const exps = [
     { reset: '1', qos: 0, itp: 0, nome_arquivo: 'qos0_' + tam + 'b0ms_1.csv' },
     { reset: '1', qos: 0, itp: 0, nome_arquivo: 'qos0_' + tam + 'b0ms_2.csv' },
     { reset: '1', qos: 0, itp: 0, nome_arquivo: 'qos0_' + tam + 'b0ms_3.csv' },
+    { reset: '1', qos: 0, itp: 10, nome_arquivo: 'qos0_' + tam + 'b10ms_1.csv' },
+    { reset: '1', qos: 0, itp: 10, nome_arquivo: 'qos0_' + tam + 'b10ms_2.csv' },
+    { reset: '1', qos: 0, itp: 10, nome_arquivo: 'qos0_' + tam + 'b10ms_3.csv' },
     { reset: '1', qos: 0, itp: 20, nome_arquivo: 'qos0_' + tam + 'b20ms_1.csv' },
     { reset: '1', qos: 0, itp: 20, nome_arquivo: 'qos0_' + tam + 'b20ms_2.csv' },
     { reset: '1', qos: 0, itp: 20, nome_arquivo: 'qos0_' + tam + 'b20ms_3.csv' },
@@ -35,12 +38,24 @@ const exps = [
     { reset: '1', qos: 0, itp: 100, nome_arquivo: 'qos0_' + tam + 'b100ms_1.csv' },
     { reset: '1', qos: 0, itp: 100, nome_arquivo: 'qos0_' + tam + 'b100ms_2.csv' },
     { reset: '1', qos: 0, itp: 100, nome_arquivo: 'qos0_' + tam + 'b100ms_3.csv' },
+    { reset: '1', qos: 0, itp: 1000, nome_arquivo: 'qos0_' + tam + 'b1000ms_1.csv' },
+    { reset: '1', qos: 0, itp: 1000, nome_arquivo: 'qos0_' + tam + 'b1000ms_2.csv' },
+    { reset: '1', qos: 0, itp: 1000, nome_arquivo: 'qos0_' + tam + 'b1000ms_3.csv' },
+    { reset: '1', qos: 0, itp: 3000, nome_arquivo: 'qos0_' + tam + 'b3000ms_1.csv' },
+    { reset: '1', qos: 0, itp: 3000, nome_arquivo: 'qos0_' + tam + 'b3000ms_2.csv' },
+    { reset: '1', qos: 0, itp: 3000, nome_arquivo: 'qos0_' + tam + 'b3000ms_3.csv' },
+    { reset: '1', qos: 0, itp: 5000, nome_arquivo: 'qos0_' + tam + 'b5000ms_1.csv' },
+    { reset: '1', qos: 0, itp: 5000, nome_arquivo: 'qos0_' + tam + 'b5000ms_2.csv' },
+    { reset: '1', qos: 0, itp: 5000, nome_arquivo: 'qos0_' + tam + 'b5000ms_3.csv' },
 
     ///************///
 
     { reset: '1', qos: 1, itp: 0, nome_arquivo: 'qos1_' + tam + 'b0ms_1.csv' },
     { reset: '1', qos: 1, itp: 0, nome_arquivo: 'qos1_' + tam + 'b0ms_2.csv' },
     { reset: '1', qos: 1, itp: 0, nome_arquivo: 'qos1_' + tam + 'b0ms_3.csv' },
+    { reset: '1', qos: 1, itp: 10, nome_arquivo: 'qos1_' + tam + 'b10ms_1.csv' },
+    { reset: '1', qos: 1, itp: 10, nome_arquivo: 'qos1_' + tam + 'b10ms_2.csv' },
+    { reset: '1', qos: 1, itp: 10, nome_arquivo: 'qos1_' + tam + 'b10ms_3.csv' },
     { reset: '1', qos: 1, itp: 20, nome_arquivo: 'qos1_' + tam + 'b20ms_1.csv' },
     { reset: '1', qos: 1, itp: 20, nome_arquivo: 'qos1_' + tam + 'b20ms_2.csv' },
     { reset: '1', qos: 1, itp: 20, nome_arquivo: 'qos1_' + tam + 'b20ms_3.csv' },
@@ -56,12 +71,24 @@ const exps = [
     { reset: '1', qos: 1, itp: 100, nome_arquivo: 'qos1_' + tam + 'b100ms_1.csv' },
     { reset: '1', qos: 1, itp: 100, nome_arquivo: 'qos1_' + tam + 'b100ms_2.csv' },
     { reset: '1', qos: 1, itp: 100, nome_arquivo: 'qos1_' + tam + 'b100ms_3.csv' },
+    { reset: '1', qos: 1, itp: 1000, nome_arquivo: 'qos1_' + tam + 'b1000ms_1.csv' },
+    { reset: '1', qos: 1, itp: 1000, nome_arquivo: 'qos1_' + tam + 'b1000ms_2.csv' },
+    { reset: '1', qos: 1, itp: 1000, nome_arquivo: 'qos1_' + tam + 'b1000ms_3.csv' },
+    { reset: '1', qos: 1, itp: 3000, nome_arquivo: 'qos1_' + tam + 'b3000ms_1.csv' },
+    { reset: '1', qos: 1, itp: 3000, nome_arquivo: 'qos1_' + tam + 'b3000ms_2.csv' },
+    { reset: '1', qos: 1, itp: 3000, nome_arquivo: 'qos1_' + tam + 'b3000ms_3.csv' },
+    { reset: '1', qos: 1, itp: 5000, nome_arquivo: 'qos1_' + tam + 'b5000ms_1.csv' },
+    { reset: '1', qos: 1, itp: 5000, nome_arquivo: 'qos1_' + tam + 'b5000ms_2.csv' },
+    { reset: '1', qos: 1, itp: 5000, nome_arquivo: 'qos1_' + tam + 'b5000ms_3.csv' },
 
     ///************///
 
     { reset: '1', qos: 2, itp: 0, nome_arquivo: 'qos2_' + tam + 'b0ms_1.csv' },
     { reset: '1', qos: 2, itp: 0, nome_arquivo: 'qos2_' + tam + 'b0ms_2.csv' },
     { reset: '1', qos: 2, itp: 0, nome_arquivo: 'qos2_' + tam + 'b0ms_3.csv' },
+    { reset: '2', qos: 2, itp: 10, nome_arquivo: 'qos2_' + tam + 'b10ms_1.csv' },
+    { reset: '2', qos: 2, itp: 10, nome_arquivo: 'qos2_' + tam + 'b10ms_2.csv' },
+    { reset: '2', qos: 2, itp: 10, nome_arquivo: 'qos2_' + tam + 'b10ms_3.csv' },
     { reset: '1', qos: 2, itp: 20, nome_arquivo: 'qos2_' + tam + 'b20ms_1.csv' },
     { reset: '1', qos: 2, itp: 20, nome_arquivo: 'qos2_' + tam + 'b20ms_2.csv' },
     { reset: '1', qos: 2, itp: 20, nome_arquivo: 'qos2_' + tam + 'b20ms_3.csv' },
@@ -77,6 +104,15 @@ const exps = [
     { reset: '1', qos: 2, itp: 100, nome_arquivo: 'qos2_' + tam + 'b100ms_1.csv' },
     { reset: '1', qos: 2, itp: 100, nome_arquivo: 'qos2_' + tam + 'b100ms_2.csv' },
     { reset: '1', qos: 2, itp: 100, nome_arquivo: 'qos2_' + tam + 'b100ms_3.csv' },
+    { reset: '2', qos: 2, itp: 1000, nome_arquivo: 'qos2_' + tam + 'b1000ms_1.csv' },
+    { reset: '2', qos: 2, itp: 1000, nome_arquivo: 'qos2_' + tam + 'b1000ms_2.csv' },
+    { reset: '2', qos: 2, itp: 1000, nome_arquivo: 'qos2_' + tam + 'b1000ms_3.csv' },
+    { reset: '2', qos: 2, itp: 3000, nome_arquivo: 'qos2_' + tam + 'b3000ms_1.csv' },
+    { reset: '2', qos: 2, itp: 3000, nome_arquivo: 'qos2_' + tam + 'b3000ms_2.csv' },
+    { reset: '2', qos: 2, itp: 3000, nome_arquivo: 'qos2_' + tam + 'b3000ms_3.csv' },
+    { reset: '2', qos: 2, itp: 5000, nome_arquivo: 'qos2_' + tam + 'b5000ms_1.csv' },
+    { reset: '2', qos: 2, itp: 5000, nome_arquivo: 'qos2_' + tam + 'b5000ms_2.csv' },
+    { reset: '2', qos: 2, itp: 5000, nome_arquivo: 'qos2_' + tam + 'b5000ms_3.csv' },
 ]
 
 cliente.on('connect', () => {
